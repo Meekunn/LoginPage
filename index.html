@@ -7,21 +7,37 @@
     <header>
         <h1>Login</h1>
     </header>
-    <div id="form">
+    <form id="form" onsubmit="validate()">
         <fieldset class="fieldset">
-           <legend><span>Login Form</span></legend> 
+           <legend><span>Login Form</span></legend>
            <div class="grid-container">
-            <label for="user" >Username/Email:</label>
+            <label for="user" >Username</label>
             <input type="text" id="user" name="username" placeholder="john@email.com"><br/><br/>
+           </div>
+            <div class="grid-container">
+            <label for="fname" >FirstName</label>
+            <input type="text" id="fname" name="firstname" placeholder="john@email.com"><br/><br/>
+           </div>
+            <div class="grid-container">
+            <label for="lname" >Lastname</label>
+            <input type="text" id="lname" name="lastname" placeholder="john@email.com"><br/><br/>
+           </div>
+           <div class="grid-container">
+            <label for="email" >Email:</label>
+            <input type="email" id="email" name="useremail" placeholder="john@email.com"><br/><br/>
+           </div>
+            <div class="grid-container">
+            <label for="pnum" >Username/Email:</label>
+            <input type="tel" id="pnum" name="phonenumber" placeholder="john@email.com"><br/><br/>
            </div>
            <div class="grid-container2">
             <label for="password">Password:</label>
             <input type="password" id="password" name="pass" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br/><br/>
            </div>
            <div class="button">
-            <button id="submit" onclick="validate()">Login</button>
+            <input type="submit" id="submit" value="Login"/>
            </div>
         </fieldset>
-    </div>
+    </form>
     <script src="index.js"></script>
 </body>
