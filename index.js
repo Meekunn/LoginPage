@@ -22,4 +22,4 @@ function validate(e){
         console.log("Username: "+ username + ", Password: "+ pass);  
     }
 }
-document.getElementById('submit').onsubmit(validate());
+document.getElementById('submit').onsubmit(validate(e));
